@@ -4,8 +4,6 @@ title: Background
 permalink: /background/
 ---
 
-## Background
-
 The following is background information on Autonomous Systems (AS) and BGP, as well as prior art on ASmap.
 
 The allocation of IP address space on the Internet begins with the Internet Assigned Numbers Authority (IANA), which allocates IP address ranges to a Regional Internet Registry (RIR). This RIR then assigns IP address ranges to an AS they control. They then announce to the world which AS controls which IP address range via the Border Gateway Protocol (BGP).
@@ -30,6 +28,6 @@ rrybarczyk wrote asmap-rs to download and parse RIS raw data from the RIPE NCC a
 
 fjahr wrote kartograf sources data from RIPE, RPKI, and IRR databases, parses and combines the data, to produce an IP-to-AS map file.
 
-brunoerg, sipa, and naumekogs contributed much of the work behind integrating AS map data in Core.
+brunoerg, sipa, and naumekogs contributed much of the work behind integrating ASmap data in Core.
 
 Once a map file is generated via either script, one can compress it with sipa's asmap python script. The compression is necessary as Bitcoin Core will only accept a compressed file to use for its bucketing logic.

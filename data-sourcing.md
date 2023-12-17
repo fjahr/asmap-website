@@ -4,13 +4,11 @@ title: Sourcing Data
 permalink: /sourcing-data/
 ---
 
-## Sourcing Data
-
 The major challenge remaining for ASmap is to source and aggregate data about which AS owns which IP address range. Several entities, public and private, make BGP announcement data available. The following data sources represent the current state of research, and all remain incomplete or problematic in some way.
 
 #### RIPE RIS
 
-RIPE RIS has been used as the source for all ASMaps so far, but the project describes itself the data as "useful for looking at the state of the BGP Internet, debugging/post-mortems of events in BGP, and tracking of long-term trends in BGP." [4] As such, data is collected for research purposes to observe and examine malicious behavior after the fact and learn from it. This means RIS would go out of its way to include data such as BGP hijacks and fat-finger type of leaks. There is no filtering or clean-up (after a leak was identified) of this data. The RRC's location and functionality are also publicly known so sending malicious announcements with the goal of getting them into RIS is comparatively easy.
+RIPE RIS has been used as the source for all ASMaps so far, but the project describes itself the data as "useful for looking at the state of the BGP Internet, debugging/post-mortems of events in BGP, and tracking of long-term trends in BGP" [RIS docs](https://ris.ripe.net/docs/mrt/). As such, data is collected for research purposes to observe and examine malicious behavior after the fact and learn from it. This means RIS would go out of its way to include data such as BGP hijacks and fat-finger type of leaks. There is no filtering or clean-up (after a leak was identified) of this data. The RRC's location and functionality are also publicly known so sending malicious announcements with the goal of getting them into RIS is comparatively easy.
 
 This means the RIS data is not used anywhere else to inform routing decisions directly, to my knowledge we would be the first to use the data in this way. RIS is also a more centralized solution than the alternatives, though RIPE remains an important data source and thus would not be a sound data source to build on.
 
