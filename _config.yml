@@ -8,3 +8,5 @@ plugins:
 nav_enabled: true
 heading_anchors: true
 
+favicon_ico: "/assets/images/favicon.ico"
+
