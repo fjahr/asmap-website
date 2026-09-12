@@ -17,9 +17,9 @@ We can download [RPKI](/glossary/#rpki-resource-public-key-infrastructure) [ROAs
 
 Open-source validator software that does most of the heavy lifting for us is available. The most likely candidates to be used are RPKI-client and Routinator as shown by analysis of a variety of factors recently (see [Tools](/tools-and-resources/)).
 
-The downside of RPKI is that its data is not complete since RPKI is not as widely deployed as we would like. If RPKI is not deployed by an AS their prefixes cannot be validated and will not be present in an RPKI repository. In a test in mid 2023, I found about 60% of the Bitcoin network can be validated. This is a good base but not enough.
+The downside of RPKI is that its data is not complete since RPKI is not as widely deployed as we would like. If RPKI is not deployed by an AS their prefixes cannot be validated and will not be present in an RPKI repository. As of September 2026, about 68% of IPv4 address space was covered by RPKI, up from 39% in September 2022. This is great progress and trending in the right direction.
 
-On the plus side: RPKI adoption is [growing](https://blog.apnic.net/2023/01/18/rpkis-2022-year-in-review-growth-and-innovation/) so we can expect further improvements in data completeness over time. To some degree, it would also be interesting to call the wider bitcoin community's attention to this and ask them to check if their hosting provider has already implemented RPKI and if that is not the case message them that it would be a good idea to do it.
+To some degree, it would also be interesting to call the wider bitcoin community's attention to this and ask them to check if their hosting provider has already implemented RPKI and if that is not the case message them that it would be a good idea to do it.
 
 ### RIPE RIS
 

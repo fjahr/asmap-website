@@ -8,3 +8,7 @@ plugins:
 nav_enabled: true
 heading_anchors: true
 
+nav_external_links:
+  - title: Dashboard
+    url: https://dashboard.asmap.org
+    opens_in_new_tab: true

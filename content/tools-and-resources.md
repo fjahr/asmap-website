@@ -7,12 +7,12 @@ nav_order: 5
 
 ## Tools
 
+- [IP-to-AS lookup](https://0xb10c.github.io/asmap-web/?ip=1.1.1.1,8.8.8.8,9.9.9.9): look up AS by IPs.
 - [RPKI client](https://github.com/rpki-client/rpki-client-portable): validates BGP and ROA announcements
 - RPKI client [Nix flake](https://github.com/asmap/rpki-client-nix) - a Nix flake bundling the RPKI client
 - [kartograf](https://github.com/asmap/kartograf): fetch, parse, and merge data from various RIRs and produce an ASmap
 - [asmap-py](https://github.com/sipa/asmap/blob/nextgen/asmap.py): a Python script to compress an ASMap file
 - Bitcoin Core asmap [code](https://github.com/bitcoin/bitcoin/tree/master/contrib/asmap): the ASMap Core script code
-- [asmap-rs](https://github.com/rrybarczyk/asmap-rs/tree/master): a Rust program to download and parse data from the RIPE NCC
 
 ## References
 

@@ -16,6 +16,9 @@ An autonomous system is a large network or group of networks that presents a wel
 #### **ASN**: Autonomous System Number
 Every autonomous system is assigned a 16 or 32 bit integer to uniquely identify it when broadcasting messages over BGP.
 
+#### **ASPA**: Autonomous System Provider Authorization
+An emerging [standard](https://datatracker.ietf.org/doc/draft-ietf-sidrops-aspa-verification/) for guaranteeing route path integrity amongst BGP peers, therby preventing route hijacks and malicious route announcements.
+
 #### **BGP**: Border Gateway Protocol
 A protocol for autonomous systems to communicate routing policies to other autonomous systems. See [Cloudflare](https://www.cloudflare.com/learning/security/glossary/what-is-bgp/).
 

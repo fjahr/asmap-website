@@ -1,18 +1,18 @@
 ---
 layout: default
-title: Background
-permalink: /background/
+title: About
+permalink: /about/
 nav_order: 2
 ---
 
-## AS, BGP, and Prior Work
+## AS, RIR, and BGP
 ---------
 
-_The following is introductory information on Autonomous Systems (AS) and BGP, as well as prior art on ASmap. Lots of acronyms; use [Glossary](/glossary)._
+_The following is introductory information on Autonomous Systems (AS) and BGP, as well as prior art on ASmap. A [Glossary](/glossary) is provided._
 
-The allocation of IP address space on the Internet begins with the Internet Assigned Numbers Authority (IANA), which allocates IP address ranges to a Regional Internet Registry (RIR). This RIR then assigns IP address ranges to an AS they control. They then announce to the world which AS controls which IP address range via the Border Gateway Protocol (BGP).
+The allocation of IP address space on the Internet begins with the *Internet Assigned Numbers Authority* (IANA), which allocates IP address ranges to a *Regional Internet Registry* (RIR). This RIR then assigns IP address ranges to an AS they control. They then announce to the world which AS controls which IP address range via the *Border Gateway Protocol* (BGP).
 
-Governments around the world have their own reserved ranges, as do Internet Service Providers (ISP) and some commercial entities. For example, Amazon has their own AS, as does Cloudflare, and therefore each has control over IP addresses in a given range. Cloudflare has a [good explainer](https://www.cloudflare.com/learning/network-layer/what-is-an-autonomous-system/) about AS and where they fit in the Internet’s architecture. Each AS is given a number to be identified by.
+Governments around the world have their own reserved ranges, as do *Internet Service Providers* (ISP) and some commercial entities. For example, Amazon has their own AS, as does Cloudflare, and therefore each has control over IP addresses in a given range. Cloudflare has a [good explainer](https://www.cloudflare.com/learning/network-layer/what-is-an-autonomous-system/) about AS and where they fit in the Internet’s architecture. Each AS is given a number to be identified by.
 
 ### The Problem
 
@@ -26,13 +26,4 @@ The central problem is that sharing a route via BGP relies on trust, in the sens
 
 > [...] Unfortunately, the assumption that netgroups correspond to regions and internet providers no longer holds. Over the past years, IPv4 addresses have become more fluid, in the sense that they are traded between entities and resulting mapping is now in many cases near-random. For example, Amazon now controls many IP ranges."
 
-Starting with Core 20.0, you can pass an ASmap file via the `-asmap=<filepath>` option. Sourcing the data and generating these ASmaps require some tooling.
-
-## Prior work
-
-rrybarczyk wrote [asmap-rs](https://github.com/rrybarczyk/asmap-rs/) to download and parse RIS raw data from the RIPE NCC and produce a IP-to-AS map file.
-
-brunoerg, naumekogs, and sipa contributed much of the work behind integrating ASmap data in Core.
-
-
-------------------
+What is needed is a way to map a network to the AS that owns it, in order to bucket peers by AS instead of by netgroups. This is what the `-asmap` flag in Bitcoin Core enables. To learn how to use it, see [Usage](/usage); to learn how to make such a map of the Internet in the first place, see [Sourcing Data](/sourcing-data).
